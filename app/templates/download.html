@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Download Video & Subtitles</title>
+</head>
+<body>
+
+    <h2>Final Video Preview</h2>
+
+    <video width="640" controls>
+        <source src="/processed/{{ video_file }}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <br><br>
+
+    <h3>Download Files</h3>
+
+    <p>
+        <a href="/processed/{{ video_file }}" download>
+            Download Final Video
+        </a>
+    </p>
+
+    <p>
+        <a href="/processed/{{ subtitle_file }}" download>
+            Download Subtitle File (SRT)
+        </a>
+    </p>
+
+    <hr>
+
+    <p>
+        <a href="/upload">Upload Another Video</a>
+    </p>
+
+</body>
+</html>

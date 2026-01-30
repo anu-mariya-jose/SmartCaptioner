@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Preview Video</title>
+</head>
+<body>
+
+    <h2>Preview Video with Subtitles</h2>
+
+    <video width="600" controls>
+        <source src="/processed/{{ video }}" type="video/mp4">
+        <track src="/processed/{{ srt }}"
+               kind="subtitles"
+               srclang="en"
+               label="Subtitles"
+               default>
+    </video>
+
+    <br><br>
+
+    <a href="/edit">
+        <button>Edit Subtitles</button>
+    </a>
+
+    <br><br>
+
+    <a href="/download">
+        <button>Proceed to Download</button>
+    </a>
+
+</body>
+</html>
+
+

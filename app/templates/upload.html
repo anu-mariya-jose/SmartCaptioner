@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Captioner – Upload</title>
+</head>
+<body>
+
+    <h1>Upload Your Video</h1>
+
+    <p>
+        Upload a video file and choose the language for subtitles.
+        Supported formats: MP4, MKV, AVI, MOV.
+    </p>
+
+    <form method="POST" enctype="multipart/form-data">
+
+        <!-- Video Upload -->
+        <label for="file">Select Video File:</label><br>
+        <input type="file" name="file" id="file" accept="video/*" required>
+        <br><br>
+
+        <!-- Language Selection -->
+        <label for="language">Subtitle Language:</label><br>
+        <select name="language" id="language" required>
+            <option value="en">English</option>
+            <option value="ml">Malayalam</option>
+            <option value="hi">Hindi</option>
+            <option value="ta">Tamil</option>
+            <option value="te">Telugu</option>
+        </select>
+
+        <br><br>
+
+        <!-- Submit -->
+        <button type="submit">Generate Subtitles</button>
+
+    </form>
+
+</body>
+</html>
+

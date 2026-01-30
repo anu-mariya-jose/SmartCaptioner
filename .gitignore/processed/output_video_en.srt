@@ -1,0 +1,16 @@
+1
+00:00:00,000 --> 00:00:06,000
+Hello, this is a test audio 4, speech to text.
+
+2
+00:00:06,000 --> 00:00:12,000
+Namaste, ya speech to text, system ka test hei.
+
+3
+00:00:12,000 --> 00:00:19,000
+Namaste Karam, either speech to text system in day, test ana.
+
+4
+00:00:19,000 --> 00:00:22,000
+Thank you for listening.
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Processing Video</title>
+</head>
+<body>
+
+    <h2>Processing Your Video</h2>
+
+    <p>Please wait while we generate subtitles.</p>
+
+    <ul>
+        <li>✔ Extracting audio from video</li>
+        <li>✔ Converting speech to text using Whisper</li>
+        <li>✔ Generating subtitle file</li>
+        <li>✔ Embedding subtitles into video</li>
+    </ul>
+
+    <p>This may take a few moments depending on video length.</p>
+
+    <!-- 🔥 Pass the language to /run -->
+    <script>
+        window.onload = function () {
+            const filename = "{{ filename }}";
+            const language = "{{ language }}";  // Language from upload form
+            window.location.href = `/run/${filename}?lang=${language}`;
+        };
+    </script>
+
+</body>
+</html>
+
